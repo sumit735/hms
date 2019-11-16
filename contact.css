@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #313840;
+}
+
+.contact-section {
+    padding: 80px 0;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:600px) {
+    .contact-section {
+        /* position: relative; */
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+}
+
+.inner-width {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+
+}
+
+.contact-section h1{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+
+}
+
+.name,.num,.message {
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #fff;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.name {
+    float: left;
+    width: 270px;
+
+}
+
+.num {
+    float: right;
+    width: 270px;
+
+}
+
+.message {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.btnc {
+    background: none;
+    color: #f50136;
+    border: 1px solid #f50136;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+.btnc:hover {
+    background: #f50136;
+    color: #fff;
+}
+
+@media screen and (max-width:600px) {
+    .name,.num {
+        width: 100%;
+    }
+}
